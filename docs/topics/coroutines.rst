@@ -25,12 +25,6 @@ hence use coroutine syntax (e.g. ``await``, ``async for``, ``async with``):
         As a side effect, if the callback raises an exception, none of its
         output is processed.
 
-    -   Because `asynchronous generators were introduced in Python 3.6`_, you
-        can only use ``yield`` if you are using Python 3.6 or later.
-
-        If you need to output multiple items or requests and you are using
-        Python 3.5, return an iterable (e.g. a list) instead.
-
 -   The :meth:`process_item` method of
     :ref:`item pipelines <topics-item-pipeline>`.
 
@@ -43,8 +37,6 @@ hence use coroutine syntax (e.g. ``await``, ``async for``, ``async with``):
     :ref:`downloader middlewares <topics-downloader-middleware-custom>`.
 
 -   :ref:`Signal handlers that support deferreds <signal-deferred>`.
-
-.. _asynchronous generators were introduced in Python 3.6: https://www.python.org/dev/peps/pep-0525/
 
 Usage
 =====
